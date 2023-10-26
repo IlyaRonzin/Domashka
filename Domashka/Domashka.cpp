@@ -23,7 +23,7 @@ int main() {
 	cout << "Величина вклада(руб.) -> ";   // jj//
 	cin >> sum;
 	cout << "Срок вклада(дней) -> ";//Hello
-	cin >> time;
+	cin >> time;//Cin
 	cout << "Процентная ставка(% годовых) -> ";
 	cin >> perc;
 	endsum = (perc / 100 / 365) * time * sum;
