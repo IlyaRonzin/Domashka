@@ -22,7 +22,7 @@ int main() {
 	double endsum, perc;
 	cout << "Величина вклада(руб.) -> ";   // jj//
 	cin >> sum;
-	cout << "Срок вклада(дней) -> ";
+	cout << "Срок вклада(дней) -> ";//Hello
 	cin >> time;
 	cout << "Процентная ставка(% годовых) -> ";
 	cin >> perc;
