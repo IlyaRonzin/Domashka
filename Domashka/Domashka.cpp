@@ -20,7 +20,7 @@ int main() {
 	cout << "Введите иходные данные: " << endl;
 	int sum, time;
 	double endsum, perc;
-	cout << "Величина вклада(руб.) -> ";
+	cout << "Величина вклада(руб.) -> ";   // jj
 	cin >> sum;
 	cout << "Срок вклада(дней) -> ";
 	cin >> time;
