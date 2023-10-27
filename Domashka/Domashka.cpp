@@ -7,13 +7,27 @@ using namespace std;
 //m -> 10
 //s -> 20
 //f = 95.17 градусов.
+//Тесты:
+//6 10 20 -> 174.83
+//12 0 0 -> 0
+//15 3 41 -> 91.84
 int main() {
 	setlocale(LC_ALL, "rus");
 	cout << "Введите данные о текущем времени:" << endl;
 	int h, m,s;
-	float f;
-	cout << "Введите длину окружности(см) -> ";
-
-	cout << "Площадь круга " << " кв.см.";
+	float f,dpm,dps,dph;
+	dph = 360 / 12;
+	dpm = dph / 60;
+	dps = dpm / 60;
+	cout << "h -> ";
+	cin >> h;
+	cout << "m -> ";
+	cin >> m;
+	cout << "s -> ";
+	cin >> s;
+	f = (dph*(h%12)+dpm*m+dps*s);
+	if (f > 180)
+		f = 360 - f;
+	cout << "f= " <<f<< " градусов.";
 	return 0;
 }
